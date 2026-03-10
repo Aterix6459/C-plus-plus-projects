@@ -5,6 +5,7 @@ int main() {
     int rand_numb;    
     int user_numb;
     int user_wins = 0;
+    std::string user_quest;
 
     for(int i = 10; i > 1;) {
         for(int i = 10; i > 1;) {
@@ -15,7 +16,7 @@ int main() {
 
             srand(time(NULL));
             rand_numb = 1 + rand() % 15;
-            std::cout << rand_numb;
+            // std::cout << rand_numb;
 
             std::cout << "       ваш вариант: ";
             std::cin >> user_numb;
@@ -24,9 +25,9 @@ int main() {
                 std::cout << "       \033[31m||вы угадали||\033[0m\n";
                 user_wins++;
 
-                std::string user_quest;
                 std::cout << "хотите поиграть ещё? (да/нет) ";
                 std::cin >> user_quest;
+                std::cout << "\n\n\n";
 
                 if(user_quest == "да")
                     break;
@@ -36,7 +37,7 @@ int main() {
                     return 0;
             }
             else
-                std::cout << "       вы не угадали\n";
+                std::cout << "       вы не угадали\n\n\n";
 
         }
 
