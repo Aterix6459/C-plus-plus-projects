@@ -1,2 +1,2 @@
-# C-projects
+# C++-projects
 my firsts projects on c++
